@@ -15,6 +15,7 @@ public class Info {
         weather.screenInfo();
 
         System.out.println("Total apps were opened: " + App.getTotalApps());
+
     }
     
 }

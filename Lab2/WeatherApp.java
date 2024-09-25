@@ -12,7 +12,7 @@ public class WeatherApp extends App {
     
     @Override
     public void screenInfo() {
-        System.out.println(getAppName() + " Weather right now:...");
+        System.out.println(getAppName() + " Weather right now is:...");
     }
     
 }
