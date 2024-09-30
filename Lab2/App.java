@@ -10,6 +10,16 @@ public abstract class App {
     private static int totalApps = 0;
     
     //Конструктор
+    public App() {
+        
+        this.appName = "V-chat";
+        this.appWeight = 12;
+        this.appVersion = 1.7;
+
+        //Увеличиваем счетчик приложений
+        totalApps++;
+    }
+
     public App(String appName, int appWeight, double appVersion) {
         
         this.appName = appName;

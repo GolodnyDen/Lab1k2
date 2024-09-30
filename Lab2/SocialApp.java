@@ -1,8 +1,9 @@
 package Lab2;
 
 public class SocialApp extends App {
-    public SocialApp(String appName, int appWeight, double appVersion) {
-        super(appName, appWeight, appVersion);
+
+    public SocialApp() {
+        super();
     }
 
     @Override
