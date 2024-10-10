@@ -9,7 +9,7 @@ public abstract class App {
     //Статическое поле подсчета приложений
     private static int totalApps = 0;
     
-    //Конструктор
+    //Конструктор по умолчанию
     public App() {
         
         this.appName = "V-chat";
@@ -20,6 +20,7 @@ public abstract class App {
         totalApps++;
     }
 
+    //Конструктор
     public App(String appName, int appWeight, double appVersion) {
         
         this.appName = appName;
@@ -30,7 +31,7 @@ public abstract class App {
         totalApps++;
     }
 
-    // Статический метод подсчета
+    // Статический метод 
     public static int getTotalApps() {
         return totalApps;
     }

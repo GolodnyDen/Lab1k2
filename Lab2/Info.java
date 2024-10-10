@@ -17,6 +17,7 @@ public class Info {
         WeatherApp weather = new WeatherApp("MoscowCloudY", 2,7.17);
         weather.opening();
         weather.screenInfo();
+        System.out.println(weather.getTotalApps());
 
         System.out.println("Total apps were opened: " + App.getTotalApps());
 
