@@ -2,7 +2,7 @@ package Lab4;
 
 public class Array {
 	public static void main(String[] args) {
-			Object[] arr = {1, 2, 3, 4, 5, "q"};
+			Object[] arr = {1, 2, 3, 4, 5, "Lobo"};
 			double sum = 0;
 			int count = 0;
 

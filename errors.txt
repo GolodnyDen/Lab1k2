@@ -1,0 +1,9 @@
+java.lang.IllegalArgumentException: Array element at index 5 is not a number: q
+/tat Lab4.Array.main(Array.java:18)
+
+java.lang.IllegalArgumentException: Array element at index 5 is not a number: q
+/tat Lab4.Array.main(Array.java:18)
+
+java.io.IOException: The source file does not exist: ./source.txt
+/tat Lab4.FileCopy.main(FileCopy.java:21)
+

@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class FileCopy {
     public static void main(String[] args) {
-        String sourceFilePath = "./source.txt"; 
+        String sourceFilePath = "C:/Users/User/Desktop/Lab1k2/Lab4/source.txt"; 
         String destinationFilePath = "./destination.txt"; 
 
         FileInputStream fis = null;

@@ -11,7 +11,7 @@ public class ErrorLogger {
             writer.write(e.toString()); // Запись информации об исключении
             writer.newLine();
             for (StackTraceElement element : e.getStackTrace()) { // Запись стека вызовов
-                writer.write("\tat " + element.toString());
+                writer.write("/tat " + element.toString());
                 writer.newLine();
             }
             writer.newLine();
