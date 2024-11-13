@@ -4,7 +4,7 @@ public class PasswordValidator {
 
     public static void main(String[] args) {
         String password = args[0];
-        //String password = "Test1";
+        //String password = "Testing123";
 
         String regex = "^(?=.*[A-Z])(?=.*\\d)[a-zA-Z0-9]{8,16}$";
 
