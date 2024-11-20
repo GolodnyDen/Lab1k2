@@ -2,8 +2,8 @@ import java.util.regex.*;
 
 public class NumberFinder {
     public static void main(String[] args) {
-        String text = "Не имей 100 рублй а имей 100 друзей";
-        Pattern pattern = Pattern.compile("\\d*(\\.\\d+)?");
+        String text = "Не имей .99 рублй а имей 100 друзей";
+        Pattern pattern = Pattern.compile("\\d+(\\.\\d+)?");
 
         Matcher matcher = pattern.matcher(text);
 
