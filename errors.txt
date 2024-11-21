@@ -7,3 +7,9 @@ java.lang.IllegalArgumentException: Array element at index 5 is not a number: q
 java.io.IOException: The source file does not exist: ./source.txt
 /tat Lab4.FileCopy.main(FileCopy.java:21)
 
+java.lang.IllegalArgumentException: Array element at index 5 is not a number: Lobo
+/tat Lab4.Array.main(Array.java:18)
+
+java.lang.IllegalArgumentException: Array element at index 5 is not a number: Lobo
+/tat Lab4.Array.main(Array.java:18)
+
