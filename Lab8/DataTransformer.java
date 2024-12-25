@@ -7,7 +7,7 @@ public class DataTransformer {
 	@DataProcessor
 	public List<String> transformData(List<String> data) {
 			return data.stream()
-							.map(String::toUpperCase) // Преобразуем строки в верхний регистр
+							.map(String::toUpperCase)
 							.collect(Collectors.toList());
 	}
 }

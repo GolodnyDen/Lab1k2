@@ -7,7 +7,7 @@ public class DataFilter {
     @DataProcessor
     public List<String> filterData(List<String> data) {
         return data.stream()
-                .filter(s -> s.startsWith("a")) // Фильтруем строки, начинающиеся с 'a'
+                .filter(s -> s.startsWith("a")) 
                 .collect(Collectors.toList());
     }
 }
