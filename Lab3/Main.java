@@ -1,39 +1,32 @@
 package Lab3;
 import java.util.LinkedList;
 
-// Класс Product для хранения информации о товаре
-class Product {
+class Book {
     private String name;
-    private String description;
-    private double price;
-    private int quantity;
+    private String author;
+    private int copies;
 
-    public Product(String name, String description, double price, int quantity) {
+    public Book(String name, String author, int copies) {
         this.name = name;
-        this.description = description;
-        this.price = price;
-        this.quantity = quantity;
+        this.author = author;
+        this.copies = copies;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getAuthor() {
+        return author;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public int getQuantity() {
-        return quantity;
+    public int getCopies() {
+        return copies;
     }
 
     @Override
     public String toString() {
-        return "Product{name='" + name + "', description='" + description + "', price=" + price + ", quantity=" + quantity + "}";
+        return "Book{name='" + name + "', author='" + author + "', copies=" + copies + "}";
     }
 }
 
@@ -137,22 +130,23 @@ class HashTable<K, V> {
 public class Main {
     public static void main(String[] args) {
         // Создаем хэш-таблицу с вместимостью 10
-        HashTable<String, Product> productTable = new HashTable<>(10);
+        HashTable<String, Book> library = new HashTable<>(10);
 
-        // Добавляем товары
-        productTable.put("12345", new Product("laptop", "gaming laptop", 1500.99, 10));
-        productTable.put("23456", new Product("smartphone", "smartphone", 999.99, 50));
-        productTable.put("34567", new Product("headphones", "headphones", 199.99, 30));
+        // Добавляем книги
+        library.put("978-3-16-148410-0", new Book("The Great Gatsby", "F. Scott Fitzgerald", 5));
+        library.put("978-0-14-044913-6", new Book("Crime and Punishment", "Fyodor Dostoevsky", 3));
+        library.put("978-0-452-28423-4", new Book("1984", "George Orwell", 10));
 
-        // Получаем товар по артикулу
-        System.out.println("Product with art 12345: " + productTable.get("23456"));
+        // Получаем книгу по ISBN
+        System.out.println("Book with ISBN 978-3-16-148410-0: " + library.get("978-3-16-148410-0"));
 
-        // Удаляем товар
-        productTable.remove("34567");
+        // Удаляем книгу
+        library.remove("978-0-14-044913-6");
 
         // Проверяем размер таблицы
-        System.out.println("Size of hash table: " + productTable.size());
+        System.out.println("Size of library: " + library.size());
+
         // Проверяем, пуста ли таблица
-        System.out.println("Is table empty? " + productTable.isEmpty());
-     }
- }
+        System.out.println("Is library empty? " + library.isEmpty());
+    }
+}

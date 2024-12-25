@@ -15,7 +15,7 @@ public class DataManager {
 
     public void loadData(String source) {
 
-        data = List.of("apple", "banana", "cherry", "date", "fig", "grape");
+        data = List.of("apple", "banana", "avocado", "ping", "strawberry", "grape");
     }
 
     public void processData() {
